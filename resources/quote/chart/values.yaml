@@ -1,0 +1,4 @@
+image:
+  pullPolicy: Always
+  repository: 849905330246.dkr.ecr.us-west-2.amazonaws.com/test/quote
+  tag: 0.4.0

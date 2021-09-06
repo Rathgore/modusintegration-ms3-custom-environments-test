@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Replace $TENANT_ID variable in all files
+find . -name '*.yaml' -print0 | xargs -0 sed -i "s/\$TENANT_ID/$TENANT_ID/g"

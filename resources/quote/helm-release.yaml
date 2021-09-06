@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: quote
+spec:
+  chart:
+    git: git@github.com:modusintegration/$TENANT_ID-custom-environments
+    path: resources/quote/chart
+  releaseName: quote
+  values:
+    image:
+      repository: 849905330246.dkr.ecr.us-west-2.amazonaws.com/test/quote
+      tag: 0.4.0
